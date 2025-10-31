@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>Joep Duin | Back-end Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <nav class="container navbar-container">
+            <a href="#" class="navbar-logo">JoepDuin.dev</a>
+            <ul class="navbar-links" id="nav-menu">
+                <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero fade-in">
+            <div class="container">
+                <h1>Joep Duin</h1>
+                <p class="hero-subtitle">Back-end Developer & Computer Science Student</p>
+                <p class="hero-tagline">
+                    I’m a first-year Computer Science student at Inholland University of Applied Sciences and Back-end Development
+                    specializing in <b>C#</b>, <b>JavaScript</b>, and <b>SQL</b>.
+                </p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="tech-stack fade-in">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <div class="stack-grid">
+                    <div class="skill-card">
+                        <i class="devicon-csharp-plain"></i>
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-postgresql-plain"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-typescript-plain"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-figma-plain"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="fade-in">
+            <div class="container">
+                <h2>Experience & Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3>BSc Computer Science</h3>
+                            <p>Inholland University of Applied Sciences</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>HAVO</h3>
+                            <p>Bonhoeffer College</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="fade-in">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <h3>Local Website UI (LWUI)</h3>
+                        <p>Self-hosted tool for running and managing local websites with secure Cloudflare Tunnel access. Includes an admin panel for site creation, Cloudflare setup, and file management.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Shell</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/joepduin/LWUI" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Windows XP Style Portfolio</h3>
+                        <p>A nostalgic portfolio website designed to replicate the classic Windows XP interface. It showcases projects with authentic XP-style windows, buttons, and icons for that retro vibe.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/joepduin/windowsxp" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
+                            <a href="https://portfolio.joepduin.dev/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Cirklecord</h3>
+                        <p>Secure, self-hosted chat platform inspired by Discord. Features voice, video, and text channels, role management and integrations.</p>
+                        <div class="tech-tags">
+                            <span>HTML</span>
+                            <span>PHP</span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cirklecord" target="_blank"><i class="devicon-github-original"></i> GitHub</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="contact-cta">
+                    I'm currently seeking internship opportunities and am always open to connecting with other developers. Feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="https://github.com/joepduin/" target="_blank" aria-label="GitHub">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/joepduin/" target="_blank" aria-label="LinkedIn">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                    <a href="https://instagram.com/joepduin/" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:info@joepduin.dev" target="_blank" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Joep Duin. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
