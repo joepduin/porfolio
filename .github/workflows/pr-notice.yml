@@ -1,20 +1,17 @@
 # Save this file as .github/workflows/pr-comment.yml
 name: PR Notice (Internal Only)
 
-# 1. Trigger: Runs only when a PR is opened
 on:
   pull_request:
     types: [opened]
 
 jobs:
   post-comment:
-    # 2. Condition: Check if the PR is *not* from a fork.
-    # 'github.event.pull_request.head.repo.fork' is 'false' if it's from the same repo.
+    # Run only if the PR is not from a fork
     if: github.event.pull_request.head.repo.fork == false
     
     runs-on: ubuntu-latest
     
-    # 3. Permissions: Grant the token permission to write to PRs
     permissions:
       pull-requests: write 
       
@@ -28,9 +25,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: |
-                ⚠️ **Note:** This is my personal portfolio project.  
-                Please only submit a pull request if it is **absolutely necessary**.  
-                Minor suggestions or cosmetic changes may not be merged.  
-                Thank you for respecting the nature of this project!
+              body: `⚠️ **Note:** This is my personal portfolio project.\nPlease only submit a pull request if it is **absolutely necessary**.\nMinor suggestions or cosmetic changes may not be merged.\nThank you for respecting the nature of this project!`
             });
