@@ -1,5 +1,5 @@
 # Save this file as .github/workflows/pr-comment.yml
-name: PR Notice
+name: PR Notice (Internal Only)
 
 # 1. Trigger: Runs only when a PR is opened
 on:
