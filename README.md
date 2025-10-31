@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal website of Joep Duin — a simple, static portfolio site built with HTML, CSS, and a bit of JavaScript.
+Personal website of Joep Duin a simple, static portfolio site built with HTML, CSS, and a bit of JavaScript.
 
 ## About
 This repository contains my personal website/portfolio with information about me, projects, and contact details. The site is lightweight, responsive, and focused on a clean presentation of work and ways to get in touch.
